@@ -1,0 +1,296 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+/*  Reset   */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content:"";
+  display:table;
+}
+
+.group:after {
+  clear:both;
+}
+
+.group {
+  clear:both;
+  *zoom:1;
+}
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p {
+  margin-bottom: 15px;
+}
+
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background:  #f9fbfc;
+}
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 400;
+}
+cite, em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a:hover {
+  color: #00a4f7;
+  
+}
+
+a {
+  color: #648880;
+  text-decoration: none;
+}
+
+a.nav-action{
+  padding: 0 10px;
+  font-weight: 400;
+}
+
+
+a.nav-action:hover {
+  color: #000;
+  border-bottom: 5px solid #4286f4;
+  padding: 0 10px;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0px auto;
+}
+
+header.container {
+  height: 40px;
+  padding-top: 15px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #949599;
+  margin-top: 3px;
+  background: linear-gradient(#00a4f7, #fff);
+  margin-bottom: 10px;
+}
+
+.dashboard {
+  width: 20%;
+  display: inline-block;
+  border: 1px solid #949599;
+  border-radius: 5px;
+  height: 300px;
+  padding: 10px;
+  background: #fff;
+  
+}
+
+.dashboard-left {
+  float: left;
+  padding: 0;
+}
+
+.top-dashboardleft {
+  background: linear-gradient(#fff, #00a4f7);
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;;
+}
+
+.bottom-dashboardleft {
+ 
+}
+
+.profilename {
+  display: block;
+  text-align: center;
+  padding:5px;
+}
+
+.dashboard-right {
+  float: right;
+  background: linear-gradient(#fff, #00a4f7);
+}
+
+
+.tweets-container {
+  width: 58%;
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #949599;
+  border-radius: 5px;
+  /*height: 200px;*/
+  margin: 0 1%;
+}
+
+.logo {
+  float: right;
+  display: inline-block;
+  /*text-transform: uppercase;*/
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+.primary-nav {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.content-container {
+  border-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tweet {
+  display: block;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.li-tweet {
+  height: 60px;
+  border-bottom: 1px solid #949599;
+  padding: 5px;
+  background: #fff;
+  color: black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tweet-container {
+  margin-left: 50px;
+  padding: 5px;
+}
+
+.userimage {
+  display: inline-block;
+  float: left;
+  border-radius: 3px;
+}
+
+.goToUser {
+  display: inline-block;
+}
+
+.profileimage {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  margin: 0 auto;
+}
