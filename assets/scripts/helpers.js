@@ -1,4 +1,5 @@
 var formatDate = function(date){
+  var monthWord = {0:'Jan', 1:'Feb', 2:'Mar', 3:'Apr', 4:'May', 5:'Jun', 6:'Jul', 7:'Aug', 8:'Sep', 9:'Oct', 10:'Nov', 11:'Dec'};
   var hour = date.getHours();
   var min = date.getMinutes();
   var day = date.getDate();
@@ -14,19 +15,5 @@ var formatDate = function(date){
     time = ((hour % 12) !== 0 ? (hour%12 + ':' + min + " AM") : (12 + ':' + min + " PM")) ;
   } 
 
-  switch(month){
-    case 0: month = "Jan"; break;
-    case 1: month = "Feb"; break;
-    case 2: month = "Mar"; break;
-    case 3: month = "Apr"; break;
-    case 4: month = "May"; break;
-    case 5: month = "Jun"; break;
-    case 6: month = "Jul"; break;
-    case 7: month = "Aug"; break;
-    case 8: month = "Sep"; break;
-    case 9: month = "Oct"; break;
-    case 10: month = "Nov"; break;
-    case 11: month = "Dec"; break;
-  }
-  return time + ' - ' + day + ' ' + month + ' ' + year;
+  return time + ' - ' + day + ' ' + monthWord[month.toString()] + ' ' + year;
 }
