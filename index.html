@@ -23,7 +23,10 @@
       </aside>
 
       <section class="tweets-container">
-        
+        <div class="input-tweet-area">
+          <textarea class="input-tweet-box"></textarea>
+          <div class="tweet-button">Tweet</div>
+        </div>
         <ol class="ol-tweets">
 
         </ol>
@@ -81,6 +84,16 @@
 
         $(document).on('click', '.user', function(){
           $(this).closest('.goToUser').submit();
+        });
+
+        $('.tweet-button').on('click', function(){
+          var tweet = {};
+          tweet.user = 'myuser';
+          tweet.message = $(this).closest('.input-tweet-area').find('.input-tweet-box').val();
+          tweet.created_at = new Date();
+          addTweet(tweet);
+          $(this).closest('.input-tweet-area').find('.input-tweet-box').val('');
+          updateTweet();
         });
 
       });
